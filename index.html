@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Medula+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+             body {
+                 background: url('img/home.png') no-repeat center center fixed; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+            }
+            
+            @font-face {
+               font-family: myFirstFont;
+               src: url(SansationLight.woff);
+            }
+            
+            header {
+                font-size: 40px;
+               font-family: myFirstFont;
+            }
+            
+            .social {
+                background-size:20%;
+                overflow: hidden;
+                border: none;
+                position: fixed;
+                float: left;
+                z-index: auto;
+                padding: 0px 20px ;
+                 
+            }
+            
+            .fa
+            {
+                padding:5px 15px;
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+            }
+            
+            .fa:hover {
+                    filter: none;
+                    -webkit-filter: none;
+                    filter: grayscale(0);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <div class="top-left"><font color='white'>.streetsOnFilm</font></div>
+        </header>
+        <footer>
+          <div class="social">
+              <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-facebook-50.png" alt="Facebook" height="40px" width="40px"></a>
+              <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-instagram-50.png" alt="Instagram" height="40px" width="40px"></a>
+              <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-whatsapp-50.png" alt="WhatsApp" height="40px" width="40px"></a>
+              <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-youtube-50.png" alt="YouTube" height="40px" width="40px"></a>
+            </div>
+            <div class="tab">
+                <button class="tablink" >London</button>
+                <button class="tablink" >Paris</button>
+                <button class="tablink" >Tokyo</button>
+                <button class="tablink" >Oslo</button>
+            </div>
+        </footer>
+    </body>
+</html>
