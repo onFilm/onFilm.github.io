@@ -1,155 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <title>streetsOnFilm</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <style>
-        .mySlides {
-            display: none;
+        @font-face {
+            font-family: myFirstFont;
+            src: url(SansationLight.woff);
         }
 
-        .demo {
-            cursor: pointer;
-        }
-
-        div.wrap {
-            width: 100%;
-            align-self: center;
-        }
-
-        div.gallery {
-            border: 1px solid #ccc;
-        }
-
-        div.gallery:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery img {
-            width: 100%;
+        body {
+            background: url('img/home.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            width: auto;
             height: auto;
         }
 
-        div.desc {
-            padding: 15px;
-            text-align: center;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .w3-col s4 {
-                width: 49.99999%;
-                margin: 6px 0;
-            }
-        }
-
-        @media only screen and (max-width: 500px) {
-            .w3-col s4 {
-                width: 100%;
-            }
-        }
-
-        .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .dispimg {
-            position: relative;
-
-        }
-
         img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
+            border-radius: 15%;
         }
-
-        .w3-row-padding {
-            position: absolute;
-            bottom: 0;
+        header {
+            font-size: 40px;
+            font-family: myFirstFont;
         }
-
     </style>
-
 </head>
 
 <body>
-
-    <div class="dispimg">
-        <img class="mySlides" src="img/img_fjords.jpg">
-        <img class="mySlides" src="img/img_forest.jpg">
-        <img class="mySlides" src="img/img_lights.jpg">
-    </div>
-    <div class="wrap">
-        <div class="w3-col s4">
-            <div class="gallery">
-                <img class="emo w3-opacity w3-hover-opacity-off" src="img/img_fjords.jpg" alt="Trolltunga Norway" width="200" height="200" onclick="currentDiv(1)">
-            </div>
+    <header>
+        <div class="top-left">
+            <font color='white'>.streetsOnFilm</font>
         </div>
-
-
-        <div class="w3-col s4">
-            <div class="gallery">
-                <img class="emo w3-opacity w3-hover-opacity-off" src="img/img_forest.jpg" alt="Forest" width="200" height="200" onclick="currentDiv(2)">
-
-            </div>
+    </header>
+    <center>
+        <div class="gallery">
+            <a href="img/pic1.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic1_tn.jpg" alt=""></a>
+            <a href="img/pic2.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic2_tn.jpg" alt=""></a>
+            <a href="img/pic3.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic3_tn.jpg" alt=""></a>
+            <a href="img/pic4.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic4_tn.jpg" alt=""></a>
+            <a href="img/pic5.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic5_tn.jpg" alt=""></a>
+            <a href="img/pic6.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic6_tn.jpg" alt=""></a>
+            <a href="img/pic7.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic7_tn.jpg" alt=""></a>
+            <a href="img/pic8.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic8_tn.jpg" alt=""></a>
+            <a href="img/pic9.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic9_tn.jpg" alt=""></a>
+            <a href="img/pic10.jpg" data-lightbox="mygallery" data-title="Image1"><img src="img/pic10_tn.jpg" alt=""></a>
         </div>
+    </center>
 
-        <div class="w3-col s4">
-            <div class="gallery">
-                <img class="emo w3-opacity w3-hover-opacity-off" src="img/img_lights.jpg" alt="Northern Lights" width="600" height="400">
-            </div>
+    <footer>
+        <div class="social">
+            <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-facebook-50.png" alt="Facebook" height="40px" width="40px"></a>
+            <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-instagram-50.png" alt="Instagram" height="40px" width="40px"></a>
+            <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-whatsapp-50.png" alt="WhatsApp" height="40px" width="40px"></a>
+            <a href="#" class="fa" target="_blank"><img class="soimg" src="img/icons8-youtube-50.png" alt="YouTube" height="40px" width="40px"></a>
         </div>
-
-        <div class="w3-col s4">
-            <div class="gallery">
-                <img class="emo w3-opacity w3-hover-opacity-off" src="img/img_lights.jpg" alt="Northern Lights" width="600" height="400">
-            </div>
+        <div class="tab">
+            <button class="tablink">Contact Us</button>
+            <button class="tablink">About</button>
+            <a href="#" target="_self"><button class="tablink" >Gallery</button></a>
+            <a href="index.html" target="_self"><button class="tablink">Home</button></a>
         </div>
-
-        <div class="clearfix"></div>
-    </div>
-
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-opacity-off";
-        }
-
-    </script>
+    </footer>
 </body>
 
 </html>
