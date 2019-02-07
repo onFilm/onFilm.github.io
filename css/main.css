@@ -1,6 +1,7 @@
 /* Style the tab */
 
 .tab {
+    font-family : monospace;
     overflow: hidden;
     border: none;
     background-color: transparent;
