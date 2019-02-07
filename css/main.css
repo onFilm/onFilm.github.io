@@ -6,13 +6,10 @@
     background-color: transparent;
 }
 
-.tab a {
-        font-family: monospace;
-}    
-
 /* Style the buttons that are used to open the tab content */
 
 .tab button {
+    font-family: monospace;
     background-color: inherit;
     float: right;
     border: none;
