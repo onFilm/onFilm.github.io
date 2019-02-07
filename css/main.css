@@ -1,7 +1,7 @@
 /* Style the tab */
 
 .tab {
-    font-family : monospace;
+    font-family: monospace;
     overflow: hidden;
     border: none;
     background-color: transparent;
@@ -16,7 +16,7 @@
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 /* Change background color of buttons on hover */
